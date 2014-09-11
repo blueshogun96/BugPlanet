@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<resources>
+    <dir>BugPlanet.app/Contents/Resources/</dir>
+	<sprites count="28">
+		<file>bubble.tga</file>
+		<file>bugs1.tga</file>
+		<file>bugs2.tga</file>
+		<file>coin.tga</file>
+		<file>spr1.tga</file>
+		<file>spr2.tga</file>
+		<file>flower1.tga</file>
+		<file>flower2.tga</file>
+		<file>flower3.tga</file>
+		<file>flower4.tga</file>
+		<file>flower5.tga</file>
+		<file>grass.tga</file>
+        <file>grass1a.tga</file>
+		<file>leaf.tga</file>
+		<file>mushroom1.tga</file>
+		<file>mushroom2.tga</file>
+		<file>mushroom3.tga</file>
+        <file>ship1.tga</file>
+        <file>ship2.tga</file>
+        <file>missile.tga</file>
+        <file>crystal.tga</file>
+        <file>star.tga</file>
+        <file>flare.tga</file>
+        <file>particle.tga</file>
+        <file>sparkle.tga</file>
+        <file>shogun3d.tga</file>
+        <file>pause_button.tga</file>
+        <file>bomb_button.tga</file>
+	</sprites>
+	<soundfx count="10">
+		<file>gameover.wav</file>
+        <file>pop.wav</file>
+        <file>rocket_fire.wav</file>
+        <file>shoot.wav</file>
+        <file>select.wav</file>
+        <file>crystal.wav</file>
+        <file>expl1.wav</file>
+        <file>expl2.wav</file>
+        <file>expl3.wav</file>
+        <file>advance.wav</file>
+	</soundfx>
+	<music>
+		<file>cyrf_cave_of_bone.wav</file>
+	</music>
+</resources>
