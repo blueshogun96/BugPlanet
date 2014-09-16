@@ -38,7 +38,7 @@ extern void (*_exit_func)();
 {
     _display_func();
     
-    [[EAGLContext currentContext] presentRenderbuffer:GL_RENDERBUFFER];
+    [[EAGLContext currentContext] presentRenderbuffer:GL_RENDERBUFFER_OES];
 }
 
 #pragma mark -

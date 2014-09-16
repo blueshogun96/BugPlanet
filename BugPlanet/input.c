@@ -334,6 +334,7 @@ void poll_input_devices( struct input_t* inp )
         }
     }*/
     extern int reduce_speed;
+    extern int swidth, sheight;
     
     if( reduce_speed )
         return;
@@ -353,7 +354,7 @@ void poll_input_devices( struct input_t* inp )
         
         if( touch.x > 160+320-50 && touch.y < 80 && !touch.moved )
             inp->pause = Yes;
-        if( touch.x > 160 && touch.x < 210 && touch.y > 360 && touch.y < 410 && !touch.moved )
+        if( touch.x > 160 && touch.x < 210 && touch.y > (sheight-120) && touch.y < (sheight-120)+50 && !touch.moved )
             inp->bomb = Yes;
         
         touch.moved = No;

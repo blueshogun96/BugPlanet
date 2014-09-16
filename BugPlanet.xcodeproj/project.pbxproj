@@ -111,6 +111,7 @@
 		84694642181890F100CED9A0 /* bomb_button.tga in Resources */ = {isa = PBXBuildFile; fileRef = 84694641181890F000CED9A0 /* bomb_button.tga */; };
 		84AA6C2E18A8A1B100298816 /* savestate.c in Sources */ = {isa = PBXBuildFile; fileRef = 84AA6C2D18A8A1B100298816 /* savestate.c */; };
 		84C4806318DD1A6200C48F01 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C4806218DD1A6000C48F01 /* Default-568h@2x.png */; };
+		CD1D77C919C81E85004CBFFA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1D77C819C81E85004CBFFA /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -243,6 +244,7 @@
 		84AA6C2D18A8A1B100298816 /* savestate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = savestate.c; sourceTree = "<group>"; };
 		84AA6C2F18A8A1CB00298816 /* savestate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = savestate.h; sourceTree = "<group>"; };
 		84C4806218DD1A6000C48F01 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CD1D77C819C81E85004CBFFA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -348,6 +350,7 @@
 				84261F141813A529008B53E4 /* Supporting Files */,
 				84AA6C2D18A8A1B100298816 /* savestate.c */,
 				84AA6C2F18A8A1CB00298816 /* savestate.h */,
+				CD1D77C819C81E85004CBFFA /* Images.xcassets */,
 			);
 			path = BugPlanet;
 			sourceTree = "<group>";
@@ -514,6 +517,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Shogun3D;
+				TargetAttributes = {
+					84261F081813A529008B53E4 = {
+						DevelopmentTeam = SX4569ZEVM;
+					};
+				};
 			};
 			buildConfigurationList = 84261F031813A529008B53E4 /* Build configuration list for PBXProject "BugPlanet" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -588,6 +596,7 @@
 				84261FB61813A761008B53E4 /* spline007.dat in Resources */,
 				84261FB71813A761008B53E4 /* spline008.dat in Resources */,
 				84261FB81813A761008B53E4 /* spline009.dat in Resources */,
+				CD1D77C919C81E85004CBFFA /* Images.xcassets in Resources */,
 				84261F8C1813A72C008B53E4 /* cyrf_cave_of_bone.wav in Resources */,
 				84261F8D1813A72C008B53E4 /* cyrf_crashed_dimension.wav in Resources */,
 				84261F8E1813A72C008B53E4 /* cyrf_waiting_room.wav in Resources */,
@@ -724,7 +733,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BugPlanet/BugPlanet-Prefix.pch";
 				INFOPLIST_FILE = "BugPlanet/BugPlanet-Info.plist";
@@ -742,15 +754,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Brandon Fleming";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Brandon Fleming (SX4569ZEVM)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BugPlanet/BugPlanet-Prefix.pch";
 				INFOPLIST_FILE = "BugPlanet/BugPlanet-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "EA2A1772-B181-458A-B961-3481DA476B77";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;

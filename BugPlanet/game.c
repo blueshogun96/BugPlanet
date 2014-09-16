@@ -2660,8 +2660,9 @@ void check_for_extra_bomb( float x, float y )
             /* We'll place the bomb where the last bug was killed */
             extra_bomb.x = x;
             extra_bomb.y = y;
-            extra_bomb.vx = (float) (rng.random(8)-4);
-            extra_bomb.vy = (float) (rng.random(8)-4);
+            
+            do{ extra_bomb.vx = (float) (rng.random(8)-4); } while( extra_bomb.vx == 0 );
+            do{ extra_bomb.vy = (float) (rng.random(8)-4); } while( extra_bomb.vy == 0 );
         }
     }
 }
@@ -2912,11 +2913,11 @@ void render_hud()
         i++;
     }
     
-    /* Pause button in the top left corner */
+    /* Bomb button on the bottom left corner */
     th = list_get_node_data( &tex, 28 );
-    draw_quad( th->handle, 160, sheight-120, 50, 50 );
+    draw_quad( th->handle, 160, sheight-120, 50, 50 ); 
     
-    /* Pause button in the bottom left Clearcorner */
+    /* Pause button in the top left corner */
     th = list_get_node_data( &tex, 27 );
     draw_quad( th->handle, (320-50)+160, 30, 50, 50 );
     
