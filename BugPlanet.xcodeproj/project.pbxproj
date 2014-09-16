@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8401FCDD19C79D9E0052802F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8401FCDC19C79D9E0052802F /* icon.png */; };
+		8401FCE019C79DB40052802F /* icon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 8401FCDF19C79DB40052802F /* icon_retina.png */; };
 		84261F0E1813A529008B53E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84261F0D1813A529008B53E4 /* UIKit.framework */; };
 		84261F101813A529008B53E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84261F0F1813A529008B53E4 /* Foundation.framework */; };
 		84261F121813A529008B53E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84261F111813A529008B53E4 /* CoreGraphics.framework */; };
@@ -103,7 +105,6 @@
 		842620041813A7C5008B53E4 /* shogun3d.tga in Resources */ = {isa = PBXBuildFile; fileRef = 84261FF51813A7C5008B53E4 /* shogun3d.tga */; };
 		842620051813A7C5008B53E4 /* sship.tga in Resources */ = {isa = PBXBuildFile; fileRef = 84261FF61813A7C5008B53E4 /* sship.tga */; };
 		842620061813A7C5008B53E4 /* title.tga in Resources */ = {isa = PBXBuildFile; fileRef = 84261FF71813A7C5008B53E4 /* title.tga */; };
-		842620081813A98F008B53E4 /* bpicon_ios.png in Resources */ = {isa = PBXBuildFile; fileRef = 842620071813A98F008B53E4 /* bpicon_ios.png */; };
 		846945411815FBFD00CED9A0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 846945401815FBFD00CED9A0 /* Default.png */; };
 		846945441815FC0100CED9A0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 846945431815FC0100CED9A0 /* Default@2x.png */; };
 		8469460F181717FA00CED9A0 /* pause_button.tga in Resources */ = {isa = PBXBuildFile; fileRef = 8469460E181717FA00CED9A0 /* pause_button.tga */; };
@@ -113,6 +114,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8401FCDC19C79D9E0052802F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		8401FCDF19C79DB40052802F /* icon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_retina.png; sourceTree = "<group>"; };
 		84261F091813A529008B53E4 /* BugPlanet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BugPlanet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84261F0D1813A529008B53E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		84261F0F1813A529008B53E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -233,7 +236,6 @@
 		84261FF51813A7C5008B53E4 /* shogun3d.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = shogun3d.tga; path = Data/img/shogun3d.tga; sourceTree = "<group>"; };
 		84261FF61813A7C5008B53E4 /* sship.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = sship.tga; path = Data/img/sship.tga; sourceTree = "<group>"; };
 		84261FF71813A7C5008B53E4 /* title.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = title.tga; path = Data/img/title.tga; sourceTree = "<group>"; };
-		842620071813A98F008B53E4 /* bpicon_ios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bpicon_ios.png; sourceTree = "<group>"; };
 		846945401815FBFD00CED9A0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		846945431815FC0100CED9A0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8469460E181717FA00CED9A0 /* pause_button.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = pause_button.tga; path = Data/img/pause_button.tga; sourceTree = "<group>"; };
@@ -264,10 +266,11 @@
 		84261EFE1813A529008B53E4 = {
 			isa = PBXGroup;
 			children = (
+				8401FCDF19C79DB40052802F /* icon_retina.png */,
+				8401FCDC19C79D9E0052802F /* icon.png */,
 				84C4806218DD1A6000C48F01 /* Default-568h@2x.png */,
 				846945431815FC0100CED9A0 /* Default@2x.png */,
 				846945401815FBFD00CED9A0 /* Default.png */,
-				842620071813A98F008B53E4 /* bpicon_ios.png */,
 				84261F601813A633008B53E4 /* Resources */,
 				84261F131813A529008B53E4 /* BugPlanet */,
 				84261F0C1813A529008B53E4 /* Frameworks */,
@@ -603,10 +606,11 @@
 				84261F861813A70E008B53E4 /* mushroom3.tga in Resources */,
 				84261F681813A6B0008B53E4 /* res.xml in Resources */,
 				84261F181813A529008B53E4 /* InfoPlist.strings in Resources */,
-				842620081813A98F008B53E4 /* bpicon_ios.png in Resources */,
 				846945411815FBFD00CED9A0 /* Default.png in Resources */,
 				846945441815FC0100CED9A0 /* Default@2x.png in Resources */,
 				84C4806318DD1A6200C48F01 /* Default-568h@2x.png in Resources */,
+				8401FCDD19C79D9E0052802F /* icon.png in Resources */,
+				8401FCE019C79DB40052802F /* icon_retina.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
